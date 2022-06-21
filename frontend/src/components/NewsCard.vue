@@ -1,8 +1,8 @@
 <template>
   <div class="New">
-    <img class="New__image" :src=item.im />
+    <img class="New__image" :src=this.item.image />
     <div class="New__date">{{this.item.date}}</div>
-    <div class="New__label">{{this.item.label}}</div>
+    <div class="New__label">{{this.item.name}}</div>
     <div class="New__text">{{this.item.description}}</div>
   </div>
 

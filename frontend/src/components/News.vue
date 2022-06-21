@@ -18,27 +18,20 @@
 
 <script>
   import NewsCard from "@/components/NewsCard";
+  import axios from 'axios';
   export default {
     name: "NewsCo",
     components: {NewsCard},
+    mounted: async function () {
+      await axios.get(process.env.VUE_APP_BASE_URL + '/api/news/').then(resp => {
+        this.item = resp.data
+          }
+      )
+      console.log(this.item)
+    },
     data() {
       return {
-        item: [{
-          image:'C:\\Users\\Tikhonov_r\\WebstormProjects\\feip_front\\src\\assets\\news\\n1.png',
-          date: '20 авг 2021',
-          label: 'Почему Гуд Вилл строит лучшие дома?',
-          description: 'Почему Гуд Вилл строит лучшие дома?'
-        },{
-          image:'',
-          date: '20 авг 2021',
-          label: 'Почему Гуд Вилл строит лучшие дома?',
-          description: 'Почему Гуд Вилл строит лучшие дома?'
-        },{
-          image:'',
-          date: '20 авг 2021',
-          label: 'Почему Гуд Вилл строит лучшие дома?',
-          description: 'Почему Гуд Вилл строит лучшие дома?'
-        }]
+        item: []
       }
     }
   }
