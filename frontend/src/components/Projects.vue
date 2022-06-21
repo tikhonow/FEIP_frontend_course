@@ -1,0 +1,116 @@
+<template>
+  <div class="Container Container--primary">
+    <div class="Projects">
+      <div class="Projects__label">
+        Реализованные проекты
+      </div>
+
+      <div class="Projects__container">
+        <div class="ProjectCard">
+          <div class="ProjectCard__left">
+            <div class="ProjectCard__left__label">
+              Дом в скандинавском стиле
+            </div>
+            <div class="ProjectCard__left__text">
+              Одноэтажный дом из газобетона габаритными размерами 10.73 х 10.73 м. и жилой площадью 101 кв. м. с вальмовой кровлей
+              <br /><br />
+              Построен по индивидуальному проекту.
+            </div>
+          </div>
+          <div class="ProjectCard__right">
+            <img class="ProjectCard__right__image" src="../assets/projects/proj1.png" />
+          </div>
+        </div>
+
+        <div class="ProjectCard">
+          <div class="ProjectCard__left">
+            <div class="ProjectCard__left__label">
+              Дом из газобетона
+            </div>
+            <div class="ProjectCard__left__text">
+              Одноэтажный дом габаритными размерами 15.2 х 9.7м. Приведенная площадь – 127.7 м.кв.
+              <br /><br />
+              Три спальные комнаты, два сан.узла, большая кухня-гостиная с выходом на террасу.
+            </div>
+          </div>
+          <div class="ProjectCard__right">
+            <img class="ProjectCard__right__image" src="../assets/projects/proj2.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: "ProjectsCo"
+  }
+</script>
+
+<style scoped>
+/* standart colors */
+/* color scheme */
+/* fonts */
+/* padding */
+/* size */
+.Projects {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.Projects__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  color: #000000;
+  margin-bottom: 32px;
+}
+.Projects__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProjectCard {
+  display: flex;
+}
+.ProjectCard__left {
+  width: 375px;
+  height: 375px;
+  background-color: #ffffff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.ProjectCard__left__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 32px;
+  margin-top: 32px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+.ProjectCard__left__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  margin-right: 10px;
+}
+.ProjectCard__right {
+  width: 375px;
+}
+.ProjectCard__right__image {
+  width: 375px;
+  height: 375px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/*# sourceMappingURL=projects.css.map */
+</style>
