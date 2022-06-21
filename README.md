@@ -1,23 +1,26 @@
 # FEIP_frontend_course
 
 Репозиторий для курса Технология программирования: FRONTEND
-Преподаватель : Евгений Шулькин
+Преподаватель : Евгений Владимирович Шулькин
 
 Цель данного проекта - реализовать лэндинг компании по продаже недвижимости, используя современный стэк технологий 
 
 ### Запуск и сборка
 
+####Frontend:
 `git clone репозиторий`.
 
- ``sail up -d``
+ ``npm i``
  
- ``sail npm run wath``
- 
- Полная версия сайта
+ ``npm run serve``
 
-![](blob:https://web.telegram.org/650dca1d-c7db-40c7-a1ed-509194a2e088)
+###Backend:
+ ``pip3 install -r requirements.txt``
+
+ ``python manage.py migrate``
+
+ ``python manage.py runserver``
+
+![Альтернативный текст](/image.jpg)
 
 
-Мобильная верстка
-
-![](blob:https://web.telegram.org/650dca1d-c7db-40c7-a1ed-509194a2e088)
